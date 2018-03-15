@@ -28,7 +28,7 @@ $(function () {
             frequency: frequency
         }
 
-        trainData.ref().push(newTrain);
+        trainData.ref().push(newTrain); //this pushes the 
 
         $("#trainName-input").val("");
         $("#destination-input").val("");

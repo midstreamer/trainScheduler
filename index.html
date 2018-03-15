@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Train Scheduler</title>
 	<!-- BootStrap  -->
@@ -10,66 +11,75 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
-	<div class="container">	
+	<div class="container">
 		<div class="row">
 			<div class="jumbotron header">
-				<h1 class="text-center">Train Schedule</h1>
+				<h1 class="text-center">The Train Scheduler</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="panel panel-success">
-				  <div class="panel-heading col-md-12">
-				  	<h4 class="col-md-6" id="icon"><i class = "fa fa-train fa-lg"></i>    Train Schedule</h4>
-				  	<h4 class="col-md-6" id="clock"><span id = "currentTime"></span></h4>
-				  </div>
-				  <div class="panel-body">
-				  	<table class="table table-striped">
-				  		<thead>
-				  			<tr>
-				  				<th>Train Name</th>
-				  				<th>Destination</th>
-				  				<th>Frequency (min.)</th>
-				  				<th>Next Arrival</th>
-				  				<th>Minutes Away</th>
-				  			</tr>
-				  		</thead>
-				  		<tbody id = "schedule">
-				  			
-				  		</tbody>
+				<div class="panel-heading col-md-12">
+					<h4 class="col-md-6" id="icon">
+						<i class="fa fa-train fa-lg"></i> Train Schedule</h4>
+					<h4 class="col-md-6" id="clock">
+						<span id="currentTime"></span>
+					</h4>
+				</div>
+				<div class="panel-body">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Train Name</th>
+								<th>Destination</th>
+								<th>Frequency (min.)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</tr>
+						</thead>
+						<tbody id="schedule">
 
-				  	</table>			
+						</tbody>
+
+					</table>
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="row">
 			<div class="newTrainInput col-md-6">
 				<div class="panel panel-success">
-					  <div class="panel-heading">
-					  	<h4 id = addTitle>Add New Train</h4>
-					  	<h4 id = "add"><i id = "symbol" class = "fa fa-plus fa-lg"></i></h4>
+					<div class="panel-heading">
+						<h4 id=a ddTitle>Add New Train</h4>
+						<h4 id="add">
+							<i id="symbol" class="fa fa-plus fa-lg"></i>
+						</h4>
 
 
-					  </div>
-					  <div class="panel-body" id="newTrainSchedule" data-status = "hide" > 	
+					</div>
+					<div class="panel-body" id="newTrainSchedule" data-status="hide">
 
 						<div role="form" class="form-group">
-							
+
 							<label for="Search">Train Name:</label>
 							<input type="text" class="form-control" id="trainName-input" placeholder="" required>
-									
+
 							<label for="Destination">Destination:</label>
 							<input type="text" class="form-control" id="destination-input">
-						
-							<label for="Start Time">First Train Arrival: <span id= timeFormat>(Time Format HH:MM)</span></label>
-							<input type="text" class="form-control" id="startTime-input" >
-						
+
+							<label for="Start Time">First Train Arrival:
+								<span id=t imeFormat>(Time Format HH:MM)</span>
+							</label>
+							<input type="text" class="form-control" id="startTime-input">
+
 							<label for="Frequency">Frequency:</label>
 							<input type="number" class="form-control" id="frequency-input">
-											
-							<button class="btn btn-primary" id="newTrain"></i>Submit</button>
-									
+
+							<button class="btn btn-primary" id="newTrain">
+								</i>Submit</button>
+
 						</div>
 					</div>
 				</div>
@@ -78,18 +88,16 @@
 	</div>
 
 	<!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <!-- Moment -- >
-        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap jQuery -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-           
-    <!-- Moment JS -->
-  	<script text="text/javascript" src="assets/javascript/moment.js"></script>
-  	<!-- Local Javascript -->
-    <script type="text/javascript" src="assets/javascript/logic.js"></script>
-     
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Local Moment File -->
+	<script type="text/javascript" src="assets/javascript/moment.js"></script>
+	<!-- Local Javascript File -->
+	<script type="text/javascript" src="assets/javascript/logic.js"></script>
+
 </body>
+
 </html>
