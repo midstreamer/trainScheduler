@@ -46,15 +46,19 @@ $(function () {
         var minutes = frequency - remainder;
         var arrival = moment().add(minutes, "m").format("hh:mm A");
 
+        console.log("trainName", trainName);
         console.log("Start Time: ", startTime);
         console.log("Remainder: ", remainder);
         console.log("Minutes: ", minutes);
         console.log("Arrival: ", arrival);
 
-        $("#schedule").append("<tr><td>${trainName}</td><td>${destination}</td><td>${frequency}</td><td>${arrival}</td><td>${minutes}</td>")
+        //append the train data to the html
+
+        $("#schedule").append(
+            "<tr><td>"+trainName+"</td><td>"+destination+"</td><td>"+frequency+"</td><td>"+arrival+"</td><td>"+minutes+"</td>")
     })
    
-    $('#add').click(function () { // this creates a '+' to open the form to add a train and "x" to close the form
+    $("#add").click(function () { // this creates a '+' to open the form to add a train and "x" to close the form
         if ($("#newTrainSchedule").attr("data-status") === "hide") {
             $("#newTrainSchedule").attr("data-status", "show").css({ "visibility": "visible", "height": "480px" });
             $("#symbol").removeClass("fa fa-plus").addClass("fa fa-close");
