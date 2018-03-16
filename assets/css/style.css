@@ -1,5 +1,6 @@
 body {
 	margin: 20px 0px 20px 0px;
+	background-color: rgb(240, 234, 157);
 }
 
 .header {
@@ -8,17 +9,19 @@ body {
 }
 
 .header h1 {
-	color:#478688;
+	color:#111111;
 	font-size: 5vw;
 	line-height: 0px;
 	margin:0px;
 	padding-bottom:0px;
 
 }
-
-div#panel-heading{
-    background-color: #478688;
+p{
+	position: absolute;
+	top: 118px;
+	left: 479px;
 }
+
 
 #icon {
 	float: left;
@@ -39,6 +42,25 @@ div#panel-heading{
 	padding:0;
 }
 
+#a {
+	text-align: center;
+	color: #111111;
+}
+
+#icon {
+	color: #111111;		
+}
+
+#note {
+	color: #111111;
+}
+
+#note{
+	position: absolute;
+	top: 39px;
+	left: 64px;
+}
+
 label {
 	margin-top: 20px;
 }
@@ -56,11 +78,16 @@ div#newTrainSchedule.panel-body{
 	max-height: 400px;
 	visibility: hidden;
 	padding: 0px 15px 0px 15px;
+	
 }
 
 .newTrainInput {
 	padding:0px;
 
+}
+
+#panel-heading {
+	background-color: black;
 }
 
 #newTrain {
