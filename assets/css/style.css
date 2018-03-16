@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-	background-color: #e0e7dd;
+	background-color: #d6e9cd;
 
 }
 
@@ -26,6 +26,10 @@ p{
 #icon {
 	float: left;
 	padding:0;
+}
+
+#symbol {
+	color: #111111;
 }
 
 #clock {
@@ -52,6 +56,10 @@ p{
 }
 
 #note {
+	color: #111111;
+}
+
+#currentTime {
 	color: #111111;
 }
 
