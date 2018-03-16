@@ -81,6 +81,11 @@ button {
 	margin-top: 20px;
 }
 
+.btn-primary {
+	background-color: #d6e9cd;
+	color: #111111;
+}
+
 div#newTrainSchedule.panel-body{
 	height: 0px;
 	max-height: 400px;
@@ -93,6 +98,7 @@ div#newTrainSchedule.panel-body{
 	padding:0px;
 
 }
+
 
 #panel-heading {
 	background-color: black;
